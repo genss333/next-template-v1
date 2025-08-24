@@ -1,0 +1,23 @@
+name: next-app
+
+services:
+  web:
+    container_name: web-container
+    build: .
+    ports:
+      - "3000:3000"
+  db:
+    image: ubuntu/mysql:latest
+    container_name: mysql-container
+    environment:
+      - TZ=UTC
+      - MYSQL_ROOT_PASSWORD=My:S3cr3t
+    ports:
+      - "30306:3306"
+    volumes:
+      - mysql-volume:/var/lib/mysql
+      - mysql-config-volume:/etc/mysql/mysql.conf.d/
+
+volumes:
+  mysql-volume:
+  mysql-config-volume:
