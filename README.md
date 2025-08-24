@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next Template
 
-## Getting Started
+A **Next.js starter template** with built-in UI components, utilities, and development setup for modern web apps.
+Includes form handling, API integration, internationalization, testing, and UI primitives.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- **Calendar Component**
+
+  - Event support
+  - Buddhist calendar support (with tests)
+
+- **UI Components**
+
+  - Dropdown Menu
+  - Form Components with validation (React Hook Form + Zod)
+  - Input & Text Field
+  - Label
+  - Scroll Area
+  - Separator
+  - Tabs (navigation)
+  - Toaster (notifications)
+
+- **Utilities**
+
+  - Date format interface (with tests)
+  - Responsive helper functions
+  - Class name utilities (`clsx`, `tailwind-merge`)
+  - String extension methods (with tests)
+
+- **API & Middleware**
+
+  - API Client for network requests
+  - Middleware for redirecting root route
+
+- **Internationalization**
+
+  - English & Thai dictionaries
+
+- **Validation**
+
+  - Zod validators for form inputs
+
+---
+
+## 🛠 Tech Stack
+
+- [Next.js 15](https://nextjs.org/)
+- [React 19](https://react.dev/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [Shade cn](https://ui.shadcn.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Zod](https://zod.dev/)
+- [TanStack Query](https://tanstack.com/query)
+- [Jest + Testing Library](https://testing-library.com/)
+
+---
+
+## 📦 Getting Started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm create next-app <project-name> -e https://github.com/genss333/next-template
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧪 Running Tests
 
-## Learn More
+```bash
+pnpm test
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📋 Changelog
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Features
 
-## Deploy on Vercel
+- Add calendar component with event support
+- Implement dropdown menu component
+- Create form components with validation support
+- Add input and text field components
+- Create label component for form fields
+- Implement scroll area component
+- Add separator component for layout
+- Create toaster component for notifications
+- Add English and Thai dictionaries
+- Add date format interface
+- Implement API client for network requests
+- Add responsive helper functions
+- Create utility functions for class names
+- Implement Zod validators for form inputs
+- Add middleware for redirecting root route
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Tests
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Add tests for Buddhist calendar functionality
+- Add tests for date formatting
+- Add tests for string extension methods
+
+### Chore
+
+- Update TypeScript configuration
+
+---
